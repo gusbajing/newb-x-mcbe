@@ -31,10 +31,10 @@
 #define NL_TONEMAP_TYPE 3              // 1:Exponential, 2:Reinhard, 3:Extended Reinhard, 4:ACES
 #define NL_GAMMA 1.33                  // 0.3 low ~ 2.0 high
 //#define NL_EXPOSURE 1.3              // [toggle] 0.5 dark ~ 3.0 bright
-//#define NL_SATURATION 1.4            // [toggle] 0.0 grayscale ~ 4.0 super saturated
-//#define NL_TINT                      // [toggle] enable light/dark tone tinting
-#define NL_TINT_LOW  vec3(0.3,0.5,1.4) // color tint for dark tone
-#define NL_TINT_HIGH vec3(1.4,0.7,0.3) // color tint for light tone
+#define NL_SATURATION 1.15             // [toggle] 0.0 grayscale ~ 4.0 super saturated
+#define NL_TINT                        // [toggle] enable light/dark tone tinting
+#define NL_TINT_LOW  vec3(0.9,0.95,1.1) // color tint for dark tone
+#define NL_TINT_HIGH vec3(1.15,1.0,0.8) // color tint for light tone
 
 /* Lighting */
 #define NL_SUNLIGHT_INTENSITY   3.3  // 1.0 weak ~ 5.0 bright
@@ -49,8 +49,8 @@
 #define NL_END_AMBIENT    vec3(1.98,1.25,2.3)
 
 /* Sun/moon light color */
-#define NL_DAWN_SUNLIGHT_COL   vec3(1.0,0.4,0.1)
-#define NL_NOON_SUNLIGHT_COL   vec3(1.0,0.75,0.57)
+#define NL_DAWN_SUNLIGHT_COL   vec3(1.0,0.45,0.12)
+#define NL_NOON_SUNLIGHT_COL   vec3(1.0,0.82,0.62)
 #define NL_NIGHT_MOONLIGHT_COL vec3(0.01,0.03,0.2)
 
 /* Torch colors */
@@ -71,12 +71,12 @@
 #define NL_SKY_RAIN_MIX_FACTOR 0.9
 
 /* Sky colors - zenith=top, horizon=bottom */
-#define NL_DAWN_ZENITH_COL   vec3(0.1,0.4,0.7)
-#define NL_DAWN_HORIZON_COL  vec3(3.0,0.4,0.4)
-#define NL_DAWN_EDGE_COL     vec3(2.0,0.8,0.8)
-#define NL_DAY_ZENITH_COL    vec3(0.3,0.9,2.0)
-#define NL_DAY_HORIZON_COL   vec3(1.0,1.6,1.8)
-#define NL_DAY_EDGE_COL      vec3(1.44,1.56,1.62)
+#define NL_DAWN_ZENITH_COL   vec3(0.15,0.4,0.7)
+#define NL_DAWN_HORIZON_COL  vec3(3.0,1.2,0.5)
+#define NL_DAWN_EDGE_COL     vec3(2.2,1.2,0.8)
+#define NL_DAY_ZENITH_COL    vec3(0.35,0.85,1.7)
+#define NL_DAY_HORIZON_COL   vec3(1.5,1.5,1.4)
+#define NL_DAY_EDGE_COL      vec3(1.7,1.5,1.3)
 #define NL_NIGHT_ZENITH_COL  vec3(0.008,0.048,0.08)
 #define NL_NIGHT_HORIZON_COL vec3(0.02,0.06,0.1)
 #define NL_NIGHT_EDGE_COL    vec3(0.04,0.08,0.1)
@@ -196,7 +196,7 @@
 #define NL_MOON_TILT       45.0 // 0.0 no tilt ~ 90.0 tilt of 90 degrees
 
 /* Fake godrays during sunrise/sunset */
-//#define NL_GODRAY 0.3 // [toggle] 0.1 subtle ~ 0.8 strong
+#define NL_GODRAY 0.3 // [toggle] 0.1 subtle ~ 0.8 strong
 
 /* Sky reflection */
 //#define NL_GROUND_REFL 0.4       // [toggle] 0.2 slightly reflective ~ 1.0 fully reflect sky
